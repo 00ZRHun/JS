@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Js Machinery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/logo2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo2.png">
+  <link rel="manifest" href="../../images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="../../images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/custom-responsive-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script type="text/javascript" src="../../script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../../script/all-plugins.js"></script>
+  <script type="text/javascript" src="../../script/plugin-active.js"></script>
+  <style>
+    body {
+      background-image: url("../../images/screw-4929704_192011.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    div.tab-frame input{ display:none;}
+    div.tab-frame label{ display:block; float:left;padding:5px 10px; cursor:pointer;color:white;}
+    div.tab-frame input:checked + label{ background:yellow; color:black; cursor:default}
+    div.tab-frame div.tab{ display:none; padding:5px 10px;clear:left}
+  
+    div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+    div.tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+    div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3){ display:block;}
+    .bg{
+      background-image: url("images/screw-4929704_1920.jpg");
+    }
+    @media screen and (max-width: 600px) {
+      .cardc {
+        padding-left: 10%
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header starts here -->
+  <header id="Header" style="background-color: black">
+    <nav class="main-navigation" >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="logo">
+              <a href="../../index.html"><img src="../../images/logo2.png" alt="Logo"></a>
+            </div>
+          </div>
+          <div class="col text-right">
+            <div class="menu-wrap">
+              <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+       <div class="mobile-menu">
+      <ul>
+        <li><a href="../../" class="smooth-scroll">Home</a></li> 
+         <li><a href="../../about.html" class="smooth-scroll">About Us</a></li>    
+     
+        <li><a href="../../product-category/index.html" class="smooth-scroll">Our Products</a></li>
+         <li><a href="../../index.html#ContactUs" class="smooth-scroll">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container" style="padding-top: 120px">
+    <hr>
+    <p style="color: white">Home / GMAW / i-WELD GMAW400I</p>
+    <hr>
+    <div class="row" style="background-color: black">
+      <div class="col-md-6">  <img src="../../images/MIG/2-i-WELD_GMAW500I.png" style="width:100%"></div>
+      <div class="col-md-6">
+          <p ><h2 style="color: yellow"><strong>i-WELD GMAW500I</strong></h2></p>
+          <p style="color: yellow"><strong>Features</strong></p>
+          <p style="color: white;font-size: 13px">
+              •Multifunctional MIG, Lift TIG, MMA <br>
+              •Soft-arc and strong-arm, adjustable. <br>
+              •Arc-stability with low spatter. <br>
+              •Pre-set digital display <br>
+              •Advanced IGBT module technology <br>
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top: 20px">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="tab-frame">
+            <input type="radio" checked name="tab" id="tab1">
+              <label for="tab1">Description</label>    
+              <input type="radio" name="tab" id="tab2">
+                <label for="tab2">Additional information</label>
+                <input type="radio" name="tab" id="tab3">
+              
+                <div class="tab" style="background-color: black">
+                  <strong style="color: yellow;font-size: 25px" >GMAW400I</strong>
+                  <p style="color: yellow;font-size: 15px"><strong>Applications</strong></p>
+                  <p style="color: white;font-size: 15px">
+                      1. Construction & Assembly Sites <br>
+                      2. Light Industry Iron & Steels Processing Factories <br>
+                      3. Home & Furniture Application <br>
+                      4. Equipment Assemble & Repairs <br>
+                      5. General Application        
+                  </p>
+
+                  <p style="color: yellow;font-size: 12px"><strong>Product Warranty</strong></p>
+                  <p style="color: white">1 Year Warranty</p>
+                  <p style="color: yellow;font-size: 12px"><strong>Specifications</strong></p>
+                  <p style="color: white">Model: GMAW500I</p>
+
+                  <table style="color: white">
+                    <tr>
+                      <td>Power Voltage (V)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>Three phase 415V + 15%</td>
+                    </tr>
+                    <tr>
+                      <td>Frequency (HZ)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>50/60</td>
+                    </tr>
+                    <tr>
+                      <td>Rated input current(A)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>38.5</td>
+                    </tr>
+                    <tr>
+                      <td>Output Current (A)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>40-550</td>
+                    </tr>
+                    <tr>
+                      <td>Rated output voltage(V)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>19-39</td>
+                    </tr>
+                      <tr>
+                      <td>Rated Duty Cycle (%)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>Power factor</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>0.93</td>
+                    </tr>
+                    <tr>
+                      <td>Efficiency(%)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>≥85</td>
+                    </tr>
+
+                      <tr>
+                      <td>Wire feed speed(M/MIN)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>3-18</td>
+                    </tr>
+
+                      <tr>
+                      <td>Post flow time(S)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>1.5±0.5</td>
+                    </tr>
+
+                    <!--  -->
+                    <tr>
+                        <td>Wire diameter(mm)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                        <td>0.8/1.0/ 1.2/ 1.6</td>
+                    </tr>
+                <!--  -->
+                      <tr>
+                      <td>Insulation grade</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>H</td>
+                    </tr>
+
+                      <tr>
+                      <td>Housing protection grade </td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>IP21S</td>
+                    </tr>
+
+                    <tr>
+                      <td>Applicable thickness(mm)  </td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>over 1.2</td>
+                    </tr>
+
+                    <tr>
+                      <td>Weight (kg)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>39</td>
+                    </tr>
+
+                      <tr>
+                      <td>Dimensions (mm)</td>
+                        <td>:</td>
+                        <td>&nbsp;</td>
+                      <td>W760*L430*H625</td>
+                    </tr>
+
+                  </table>
+
+                </div>
+
+                <div class="tab"  style="background-color: black"> 
+                  <strong style="color: yellow;font-size: 25px" >ADDITION INFORMAION</strong>
+                  <table style="color: white">
+                    <tr>
+                      <td>Brand</td>
+                        <td>：</td>
+                      <td>i-WELD</td>
+                    </tr>
+                    <tr>
+                      <td>Colour</td>
+                        <td>：</td>
+                      <td>Yellow</td>
+                    </tr>
+                    <tr>
+                      <td>Model</td>
+                        <td>：</td>
+                      <td>GMAW550DI</td>
+                    </tr>
+                  </table>
+                </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+ <br>
+
+  <footer id="Footer">
+    <div class="container text-center">
+      <div class="footer-text ">
+        <small style="color: white">&copy; Copyright 2020 | Js Machinery Supply Sdn.Bhd . All Rigths Reserved</small> 
+      </div>
+    </div>
+  </footer>
+  <!-- Footer section ends here -->
+</body>
+
+</html>

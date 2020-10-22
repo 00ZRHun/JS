@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Js Machinery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/logo2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo2.png">
+  <link rel="manifest" href="../../images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="../../images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/custom-responsive-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script type="text/javascript" src="../../script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../../script/all-plugins.js"></script>
+  <script type="text/javascript" src="../../script/plugin-active.js"></script>
+  <style>
+    body {
+      background-image: url("../../images/screw-4929704_192011.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    div.tab-frame input{ display:none;}
+    div.tab-frame label{ display:block; float:left;padding:5px 10px; cursor:pointer;color:white;}
+    div.tab-frame input:checked + label{ background:yellow; color:black; cursor:default}
+    div.tab-frame div.tab{ display:none; padding:5px 10px;clear:left}
+  
+    div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+    div.tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+    div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3){ display:block;}
+    .bg{
+      background-image: url("images/screw-4929704_1920.jpg");
+    }
+
+    .box {
+      padding: 0px 22px;
+      margin-bottom: 120px;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 120px;
+    }
+    .flex-container > div {
+      margin: 0px 10px;
+      padding: 0px 10px;
+      font-size: 15px;
+      color: white;
+    }
+    .fixWidth {
+      width: 20%;
+    }
+
+    #grayHr {
+      background-color: gray; 
+      width: 100%; 
+      margin-left: 17px; 
+      margin-right: 17px; 
+      padding-left: 17px; 
+      padding-right: 17px;
+    }
+
+    .col-md-12 {
+      padding: 0;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      .cardc {
+        padding-left: 10%
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header starts here -->
+  <header id="Header" style="background-color: black">
+    <nav class="main-navigation" >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="logo">
+              <a href="#"><img src="../../images/logo2.png" alt="Logo"></a>
+            </div>
+          </div>
+          <div class="col text-right">
+            <div class="menu-wrap">
+              <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+       <div class="mobile-menu">
+      <ul>
+        <li><a href="../../" class="smooth-scroll">Home</a></li> 
+         <li><a href="../../about.html" class="smooth-scroll">About Us</a></li>    
+     
+        <li><a href="../../product-category/index.html" class="smooth-scroll">Our Products</a></li>
+         <li><a href="../../index.html#ContactUs" class="smooth-scroll">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <!-- <div class="container" style="padding-top: 120px; margin: 0px 10px; padding: 0px 10px;"> -->
+  <!-- <div class="container" style="padding-top: 120px; padding-top: 120px;"> -->
+  <div class="container" style="padding-top: 20px">
+    <hr>
+    <p style="color: white">Home / GMAW / i-WELD Acetylene Regulator IW-9922EY</p>
+    <hr>
+    <div class="row" style="background-color: black">
+      <div class="col-md-6">  <img src="../../images/ACCESSORIES/1-i-WELD_Acetylene_Regulator_IW-9922EY.png" style="width:100%"></div>
+      <div class="col-md-6">
+        <p><h2 style="color: yellow"><strong>i-WELD Acetylene Regulator IW-9922EY</strong></h2></p>
+        
+        <span style="color: white;font-size: 13px">
+          <P>
+            The i-WELD IW-9922 Acetylene Regulator is a single-stage, solid brass regulator designed for medium duty welding, cutting and brazing applications. The i-WELD acetylene regulator comes with dual 2-inch steel pressure gauges and has a max outlet pressure rating of 20 PSI. Ergonomic adjusting knob provides precise operation and longer service life.
+          </P>
+          <P>
+            The i-WELD IW-9922 acetylene regulator comes with an inlet (left hand, male threads) and is designed to be used on acetylene cylinders equipped with a valve (left hand, female threads).
+          </P>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container" style="padding: 120px; margin: 120px"> -->
+  <div class="container" style="padding-top: 20px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tab-frame">
+          <input type="radio" checked name="tab" id="tab1">
+            <label for="tab1">Description</label>    
+              <input type="radio" name="tab" id="tab2">
+              <label for="tab2">Additional information</label>
+              <input type="radio" name="tab" id="tab3">
+            
+              <div class="tab" style="background-color: black">
+                <!-- <strong style="color: yellow;font-size: 25px">Description <br><hr><br></strong> -->
+                <!-- <strong style="color: yellow;font-size: 25px">Description </strong><br><br><hr style="color: yellow; background-color: yellow; font-size: 25px"> -->
+                <strong style="color: yellow; font-size: 25px">Description </strong><br>
+                <hr style="color: yellow; background-color: yellow; font-size: 25px; max-width: 350px;"><br>
+
+                <div class="box">
+                  <strong style="color: yellow; font-size: 23px;">i-WELD Acetylene Regulator IW-9922EY</strong><br><br>
+                  <p style="color: yellow; font-size: 18px; width: 100%;"><strong>FEATURES:</strong></p>
+                  <p style="color: white; font-size: 15px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● A light to medium duty regulator for general welding and cutting purposes <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● Body is machined from high-quality brass bar stock for maximum strength <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● Attractive chromed bonnet <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● Safety external safety relief valve (Oxygen Only) <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● Sintered metal filter to trap impurities <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● No soldered parts for easy maintenance <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● Easy to read dual scale gauges (BAR and PSI) <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● Sufficient oxygen flow to cut 200mm thickness of steel.
+                  </p>
+                  
+                  <p style="color: yellow;font-size: 18px; width: 100%;"><strong>SPECIFICATIONS:</strong></p>
+                  <p style="color: white;font-size: 15px">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● Flow M3/hr : 6 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● Max Delivery Pressure : 1.5 BAR / 20 PSI <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● Cylinder Pressure : 25 BAR / 375 PSI <br>
+                  </p>
+                  
+                  <p style="color: yellow;font-size: 18px; width: 100%;"><strong>Package Includes:</strong></p>
+                  <span style="color: white;font-size: 15px">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 x Acetylene Regulator
+                  </span>
+                </div>
+                <!-- <ul>
+                  <li>A light to medium duty regulator for general welding and cutting purposes</li>
+                  <li>Body is machined from high-quality brass bar stock for maximum strength</li>
+                  <li>Attractive chromed bonnet</li>
+                  <li>Safety external safety relief valve (Oxygen Only</li>
+                  <li>Sintered metal filter to trap impurities</li>
+                  <li>No soldered parts for easy maintenance</li>
+                  <li>Easy to read dual scale gauges (BAR and PSI)</li>
+                  <li>Sufficient oxygen flow to cut 200mm thickness of steel.</li>
+                </ul> -->
+                
+                <!-- <p style="color: yellow;font-size: 18px"><strong>Product Warranty</strong></p>
+                <p style="color: white">1 Year Warranty</p>
+                <p style="color: yellow;font-size: 18px"><strong>Specifications</strong></p>
+                <p style="color: white">Model: GMAW280DI</p>
+
+                <table style="color: white">
+                  <tr>
+                    <td>Input Voltage (V) </td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>One phase 240V + 15%</td>
+                  </tr>
+
+                  <tr>
+                    <td>Frequency (HZ)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>50/60</td>
+                  </tr>
+
+                  <tr>
+                    <td>Rated input current(A)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>26.5</td>
+                  </tr>
+                  <tr>
+                    <td>Output current(A)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>40-280</td>
+                  </tr>
+                  <tr>
+                    <td>Rated output voltage(V)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>16.5-26.5</td>
+                  </tr>
+                    <tr>
+                    <td>Rated Duty Cycle (%)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>30</td>
+                  </tr>
+
+                  <tr>
+                    <td>Power factor</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>0.93</td>
+                  </tr>
+                  <tr>
+                    <td>Efficiency(%)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td> ≥85</td>
+                  </tr>
+
+                    <tr>
+                    <td>Wire feed speed(m/ min)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>3-18</td>
+                  </tr>
+
+                    <tr>
+                    <td>Post flow time(S)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>1.0±0.5</td>
+                  </tr>
+
+                  <tr>
+                    <td>Wire diameter(mm)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td> 0.8/1.0/ 1.2</td>
+                  </tr>
+
+                    <tr>
+                    <td>Insulation grade</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>H</td>
+                  </tr>
+
+                    <tr>
+                    <td>Housing protection grade </td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>IP21S</td>
+                  </tr>
+
+                  <tr>
+                    <td>Applicable thickness(mm)  </td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>over 1.2</td>
+                  </tr>
+
+                  <tr>
+                    <td>Weight (kg)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>19</td>
+                  </tr>
+
+                  <tr>
+                    <td>Dimensions (mm)</td>
+                      <td>:</td>
+                      <td>&nbsp;</td>
+                    <td>W500*L950*H880</td>
+                  </tr>
+                </table>
+                
+                <br>
+
+                <p style="color: yellow;font-size: 18px"><strong>What’s In The Box?</strong></p>
+                <span style="color: white">
+                  1. i-WELD Welding Machine GMAW 280PM x 1 UNIT <br>
+                  2. MB15 Mig Torch x 1 SET <br>
+                  3. Earth Cable with Earth Clamp (100% Copper Cable) x 1 SET <br>
+                  4. Reinforced Gas Hose x 1 LGTH
+                </span> -->
+              </div>
+
+              <div class="tab"  style="background-color: black"> 
+                <!-- <strong style="color: yellow;font-size: 25px" >ADDITION INFORMAION</strong><br><br> -->
+                <strong style="color: yellow;font-size: 25px">ADDITION INFORMAION</strong><br><hr style="color: yellow; background-color: yellow; font-size: 25px; max-width: 350px;"><br>
+                <!-- <strong style="color: yellow;font-size: 25px">Description </strong><br><hr style="color: yellow; background-color: yellow; font-size: 25px; max-width: 350px;"><br> -->
+
+                <div class="flex-container">
+                  <div class="fixWidth">Brand</div>
+                  <div>:&nbsp;<i style="color: yellow;">i-WELD</i></div>
+
+                  <!-- <hr style="width: 10%; float: left;"> -->
+                  <hr id="grayHr">
+                  <!-- <hr style="width: 10%; float: right;"> -->
+
+                  <div class="fixWidth">Colour</div>
+                  <div>:&nbsp;<i>Red</i></div>
+
+                  <hr id="grayHr">
+                  
+                  <div class="fixWidth">Model</div>
+                  <div>:&nbsp;<i style="color: yellow;">IW-9922EY</i></div>
+
+                  <hr id="grayHr">
+
+                  <div class="fixWidth">Material</div>
+                  <div>:&nbsp;<i>Copper</i></div>
+                </div>
+              <!--  <hr style="background-color: gray; width: 100%;">
+                <div class="flex-container">
+                  <div>Brand</div>
+                  <div>:&nbsp;<i style="color: yellow;">i-WELD</i></div>
+                </div> -->
+
+              <!-- <td rowspan="2"><hr style="background-color: gray; width: 100%;"></td> -->
+              <!--  <table style="color: white">
+                  <tr>
+                    <td>Brand</td>
+                      <td>：</td>
+                      <td><i style="color: yellow;">i-WELD</i></td>
+                  </tr>
+                  <tr>
+                    <td colspan="150"><hr style="background-color: gray; width: 100%;"></td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Colour</td>
+                      <td>：</td>
+                      <td><i>Red</i></td>
+                  </tr>
+                  <tr>
+                    <td>Model</td>
+                      <td>：</td>
+                      <td><i>IW-9922EY</i></td>
+                  </tr>
+                  <tr>
+                    <td>Material</td>
+                      <td>：</td>
+                      <td><i>Copper</i></td>
+                  </tr>
+                </table> -->
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ <br>
+
+  <footer id="Footer">
+    <div class="container text-center">
+      <div class="footer-text ">
+        <small style="color: white">&copy; Copyright 2020 | Js Machinery Supply Sdn.Bhd . All Rigths Reserved</small> 
+</div>
+    </div>
+  </footer>
+  <!-- Footer section ends here -->
+</body>
+
+</html>
