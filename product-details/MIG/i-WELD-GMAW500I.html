@@ -39,6 +39,46 @@
     .bg{
       background-image: url("images/screw-4929704_1920.jpg");
     }
+
+    /* CSS Flexbox */
+    .box {
+      padding: 0px 22px;
+      margin-bottom: 120px;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 120px;
+    }
+    .flex-container > div {
+      margin: 0px 10px;
+      font-size: 15px;
+      color: white;
+    }
+    .fixWidth {
+      width: 12%;
+    }
+
+    /* hr */
+    #grayHr {
+      background-color: gray; 
+      width: 100%; 
+      margin-left: 10px; 
+      margin-right: 10px; 
+      padding-left: 10px; 
+      padding-right: 10px;
+    }
+
+    table > tr > td {
+      color: white;
+      font-size: 15px;
+    }
+
+    .col-md-12 {
+      padding: 0;
+      margin: 0;
+    }
+
     @media screen and (max-width: 600px) {
       .cardc {
         padding-left: 10%
@@ -82,14 +122,14 @@
 
   <div class="container" style="padding-top: 120px">
     <hr>
-    <p style="color: white">Home / GMAW / i-WELD GMAW400I</p>
+    <p style="color: white">Home / GMAW / i-WELD GMAW500I</p>
     <hr>
     <div class="row" style="background-color: black">
       <div class="col-md-6">  <img src="../../images/MIG/2-i-WELD_GMAW500I.png" style="width:100%"></div>
       <div class="col-md-6">
           <p ><h2 style="color: yellow"><strong>i-WELD GMAW500I</strong></h2></p>
           <p style="color: yellow"><strong>Features</strong></p>
-          <p style="color: white;font-size: 13px">
+          <p style="color: white; font-size: 13px">
               •Multifunctional MIG, Lift TIG, MMA <br>
               •Soft-arc and strong-arm, adjustable. <br>
               •Arc-stability with low spatter. <br>
@@ -111,22 +151,25 @@
                 <input type="radio" name="tab" id="tab3">
               
                 <div class="tab" style="background-color: black">
-                  <strong style="color: yellow;font-size: 25px" >GMAW400I</strong>
-                  <p style="color: yellow;font-size: 15px"><strong>Applications</strong></p>
-                  <p style="color: white;font-size: 15px">
-                      1. Construction & Assembly Sites <br>
-                      2. Light Industry Iron & Steels Processing Factories <br>
-                      3. Home & Furniture Application <br>
-                      4. Equipment Assemble & Repairs <br>
-                      5. General Application        
+                  <strong style="color: yellow; font-size: 25px">Description </strong><br>
+                  <hr style="background-color: yellow; font-size: 25px; max-width: 350px"><br>
+
+                  <strong style="color: yellow; font-size: 23px">GMAW500I</strong><br><br>
+                  <p style="color: yellow; font-size: 18px; width: 100%"><strong>Applications:</strong></p>
+                  <p style="color: white; font-size: 15px">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Construction & Assembly Sites <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Light Industry Iron & Steels Processing Factories <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Home & Furniture Application <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Equipment Assemble & Repairs <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. General Application        
                   </p>
 
-                  <p style="color: yellow;font-size: 12px"><strong>Product Warranty</strong></p>
-                  <p style="color: white">1 Year Warranty</p>
-                  <p style="color: yellow;font-size: 12px"><strong>Specifications</strong></p>
-                  <p style="color: white">Model: GMAW500I</p>
+                  <p style="color: yellow; font-size: 18px"><strong>Product Warranty</strong></p>
+                  <p style="color: white; margin-left: 25px">1 Year Warranty</p>
 
-                  <table style="color: white">
+
+                  <p style="color: yellow; font-size: 18px; width: 100%"><strong>Specifications:</strong></p>
+                  <table style="color: white; margin-left: 25px; margin-bottom: 15px">
                     <tr>
                       <td>Power Voltage (V)</td>
                         <td>:</td>
@@ -237,30 +280,32 @@
 
                 </div>
 
-                <div class="tab"  style="background-color: black"> 
-                  <strong style="color: yellow;font-size: 25px" >ADDITION INFORMAION</strong>
-                  <table style="color: white">
-                    <tr>
-                      <td>Brand</td>
-                        <td>：</td>
-                      <td>i-WELD</td>
-                    </tr>
-                    <tr>
-                      <td>Colour</td>
-                        <td>：</td>
-                      <td>Yellow</td>
-                    </tr>
-                    <tr>
-                      <td>Model</td>
-                        <td>：</td>
-                      <td>GMAW550DI</td>
-                    </tr>
-                  </table>
+                <div class="tab" style="background-color: black">
+                  <div class="tab" style="background-color: black">
+              <strong style="color: yellow; font-size: 25px">ADDITION INFORMAION</strong><br>
+              <hr style="background-color: yellow; font-size: 25px; max-width: 350px"><br>
+              
+                  <div class="flex-container">
+                    <div class="fixWidth">Brand</div>
+                    <div>:&nbsp;<i style="color: yellow">i-WELD</i></div>
+      
+                    <hr id="grayHr">
+      
+                    <div class="fixWidth">Colour</div>
+                    <div>:&nbsp;<i>Yellow</i></div>
+      
+                    <hr id="grayHr">
+      
+                    <div class="fixWidth">Model</div>
+                    <div>:&nbsp;<i style="color: yellow">GMAW550DI</i></div>
+                  </div>
                 </div>
           </div>
       </div>
     </div>
   </div>
+
+</div>
 
  <br>
 

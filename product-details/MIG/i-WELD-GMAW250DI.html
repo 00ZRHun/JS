@@ -39,6 +39,46 @@
     .bg{
       background-image: url("images/screw-4929704_1920.jpg");
     }
+
+    /* CSS Flexbox */
+    .box {
+      padding: 0px 22px;
+      margin-bottom: 120px;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 120px;
+    }
+    .flex-container > div {
+      margin: 0px 10px;
+      font-size: 15px;
+      color: white;
+    }
+    .fixWidth {
+      width: 12%;
+    }
+
+    /* hr */
+    #grayHr {
+      background-color: gray; 
+      width: 100%; 
+      margin-left: 10px; 
+      margin-right: 10px; 
+      padding-left: 10px; 
+      padding-right: 10px;
+    }
+
+    table > tr > td {
+      color: white;
+      font-size: 15px;
+    }
+
+    .col-md-12 {
+      padding: 0;
+      margin: 0;
+    }
+
     @media screen and (max-width: 600px) {
       .cardc {
         padding-left: 10%
@@ -69,73 +109,71 @@
         </div>
       </div>
     </nav>
-       <div class="mobile-menu">
+    <div class="mobile-menu">
       <ul>
         <li><a href="../../" class="smooth-scroll">Home</a></li> 
-         <li><a href="../../about.html" class="smooth-scroll">About Us</a></li>    
+        <li><a href="../../about.html" class="smooth-scroll">About Us</a></li>    
      
         <li><a href="../../product-category/index.html" class="smooth-scroll">Our Products</a></li>
-         <li><a href="../../index.html#ContactUs" class="smooth-scroll">Contact Us</a></li>
+        <li><a href="../../index.html#ContactUs" class="smooth-scroll">Contact Us</a></li>
       </ul>
     </div>
   </header>
 
-
-
-<div class="container" style="padding-top: 120px">
-  <hr>
-  <p style="color: white">Home / GMAW / i-WELD GMAW250DI</p>
-  <hr>
-  <div class="row" style="background-color: black">
-    
-    <!-- <div class="col-md-6">  <img src="../../images/mig.png" style="width:100%"></div> -->
-    <div class="col-md-6">  <img src="../../images/MIG/4-i-WELD_GMAW280PM.png" style="width:100%"></div>
-    <div class="col-md-6">
-      <p ><h2 style="color: yellow"><strong>i-WELD GMAW250DI</strong></h2></p>
-      <p style="color: yellow"><strong>Features</strong></p>
-      <p style="color: white;font-size: 13px">
-        1. Unique structure design, portable and lighter, easy to move <br>
-        2. With advanced inverter technology, saving energy and high welding quality <br>
-        3. Arc stability with low spatter, suitable for thin plate welding <br>
-        4. Auto protected for over-voltage, over-heat, over-current <br>
-        5. Continuous adjustment function for welding current & voltage <br>
-        6. Digital display, arc characteristic adjustable
-      </p>
+  <div class="container" style="padding-top: 120px">
+    <hr>
+    <p style="color: white">Home / GMAW / i-WELD GMAW250DI</p>
+    <hr>
+    <div class="row" style="background-color: black">
+      <!-- <div class="col-md-6">  <img src="../../images/mig.png" style="width:100%"></div> -->
+      <div class="col-md-6">  <img src="../../images/MIG/4-i-WELD_GMAW280PM.png" style="width:100%"></div>
+      <div class="col-md-6">
+        <p><h2 style="color: yellow"><strong>i-WELD GMAW250DI</strong></h2></p>
+        <p style="color: yellow"><strong>Features</strong></p>
+        <p style="color: white; font-size: 13px">
+          1. Unique structure design, portable and lighter, easy to move <br>
+          2. With advanced inverter technology, saving energy and high welding quality <br>
+          3. Arc stability with low spatter, suitable for thin plate welding <br>
+          4. Auto protected for over-voltage, over-heat, over-current <br>
+          5. Continuous adjustment function for welding current & voltage <br>
+          6. Digital display, arc characteristic adjustable
+        </p>
+      </div>
     </div>
-    
-
   </div>
-</div>
-<div class="container" style="padding-top: 20px">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="tab-frame">
-        <input type="radio" checked name="tab" id="tab1">
-          <label for="tab1">Description</label>    
-            <input type="radio" name="tab" id="tab2">
-            <label for="tab2">Additional information</label>
-            <input type="radio" name="tab" id="tab3">
-          
-            <div class="tab" style="background-color: black">
-              <!-- <strong style="color: yellow;font-size: 25px">Description <br><hr><br></strong> -->
-              <!-- <strong style="color: yellow;font-size: 25px">Description </strong><br><br><hr style="color: yellow; background-color: yellow; font-size: 25px"> -->
-              <strong style="color: yellow;font-size: 25px">Description </strong><br><hr style="color: yellow; background-color: yellow; font-size: 25px; max-width: 350px;"><br>
-              <strong style="color: yellow;font-size: 23px">GMAW250DI</strong><br><br>
-              <p style="color: yellow;font-size: 18px"><strong>Applications</strong></p>
-              <p style="color: white;font-size: 15px">
-                1. Construction & Assembly Sites <br>
-                2. Light Industry Iron & Steels Processing Factories <br>
-                3. Home & Furniture Application <br>
-                4. Equipment Assemble & Repairs <br>
-                5. General Application
-              </p>
-              <p style="color: yellow;font-size: 18px"><strong>Product Warranty</strong></p>
-              <p style="color: white">1 Year Warranty</p>
-              
-              <p style="color: yellow;font-size: 18px"><strong>Specifications</strong></p>
-              <p style="color: white">Model: GMAW280DI</p>
 
-              <table style="color: white">
+  <div class="container" style="padding-top: 20px">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tab-frame">
+          <input type="radio" checked name="tab" id="tab1">
+          <label for="tab1">Description</label>    
+          <input type="radio" name="tab" id="tab2">
+          <label for="tab2">Additional information</label>
+          <input type="radio" name="tab" id="tab3">
+
+          <div class="tab" style="background-color: black">
+            <!-- <strong style="color: yellow; font-size: 25px">Description <br><hr><br></strong> -->
+            <!-- <strong style="color: yellow; font-size: 25px">Description </strong><br><br><hr style="background-color: yellow; font-size: 25px"> -->
+            <strong style="color: yellow; font-size: 25px">Description </strong><br>
+            <hr style="background-color: yellow; font-size: 25px; max-width: 350px"><br>
+
+            <div class="box">
+              <strong style="color: yellow; font-size: 23px">GMAW250DI</strong><br><br>
+              <p style="color: yellow; font-size: 18px"><strong>Applications:</strong></p>
+              <p style="color: white; font-size: 15px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Construction & Assembly Sites <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Light Industry Iron & Steels Processing Factories <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Home & Furniture Application <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Equipment Assemble & Repairs <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. General Application
+              </p>
+
+              <p style="color: yellow; font-size: 18px"><strong>Product Warranty</strong></p>
+              <p style="color: white; margin-left: 25px">1 Year Warranty</p>
+              
+              <p style="color: yellow; font-size: 18px; width: 100%"><strong>Specifications:</strong></p>
+              <table style="color: white; margin-left: 25px; margin-bottom: 15px">
                 <tr>
                   <td>Input Voltage (V) </td>
                     <td>:</td>
@@ -247,55 +285,53 @@
               
               <br>
 
-              <p style="color: yellow;font-size: 18px"><strong>What’s In The Box?</strong></p>
+              <p style="color: yellow; font-size: 18px"><strong>What’s In The Box?</strong></p>
               <!-- <p style="color: white">1. i-WELD Welding Machine GMAW 280PM x 1 UNIT</p>
               <p style="color: white">2. MB15 Mig Torch x 1 SET</p>
               <p style="color: white">3. Earth Cable with Earth Clamp (100% Copper Cable) x 1 SET</p>
               <p style="color: white">4. Reinforced Gas Hose x 1 LGTH</p> -->
               <span style="color: white">
-                1. i-WELD Welding Machine GMAW 280PM x 1 UNIT <br>
-                2. MB15 Mig Torch x 1 SET <br>
-                3. Earth Cable with Earth Clamp (100% Copper Cable) x 1 SET <br>
-                4. Reinforced Gas Hose x 1 LGTH
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. i-WELD Welding Machine GMAW 280PM x 1 UNIT <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. MB15 Mig Torch x 1 SET <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Earth Cable with Earth Clamp (100% Copper Cable) x 1 SET <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Reinforced Gas Hose x 1 LGTH
               </span>
             </div>
-
-            <div class="tab"  style="background-color: black"> 
-              <!-- <strong style="color: yellow;font-size: 25px" >ADDITION INFORMAION</strong><br><br> -->
-              <strong style="color: yellow;font-size: 25px" >ADDITION INFORMAION</strong><br><hr style="color: yellow; background-color: yellow; font-size: 25px; max-width: 350px;"><br>
-              <!-- <strong style="color: yellow;font-size: 25px">Description </strong><br><hr style="color: yellow; background-color: yellow; font-size: 25px; max-width: 350px;"><br> -->
-              <table style="color: white">
-                <tr>
-                  <td>Brand</td>
-                    <td>：</td>
-                  <td>i-WELD</td>
-                </tr>
-                <tr>
-                  <td>Colour</td>
-                    <td>：</td>
-                  <td>Yellow</td>
-                </tr>
-                <tr>
-                  <td>Model</td>
-                    <td>：</td>
-                  <td>GMAW 225I</td>
-                </tr>
-              </table>
+          </div>
+            
+          <div class="tab" style="background-color: black">
+            <strong style="color: yellow; font-size: 25px">ADDITION INFORMAION</strong><br>
+            <hr style="background-color: yellow; font-size: 25px; max-width: 350px"><br>
+          
+            <div class="flex-container">
+              <div class="fixWidth">Brand</div>
+              <div>:&nbsp;<i style="color: yellow">i-WELD</i></div>
+          
+              <hr id="grayHr">
+          
+              <div class="fixWidth">Colour</div>
+              <div>:&nbsp;<i>Yellow</i></div>
+          
+              <hr id="grayHr">
+          
+              <div class="fixWidth">Model</div>
+              <div>:&nbsp;<i style="color: yellow">GMAW 225I</i></div>
             </div>
+          </div> 
       </div>
     </div>
+    </div>
+
+
   </div>
-</div>
 
-
-
- <br>
+  <br>
 
   <footer id="Footer">
     <div class="container text-center">
       <div class="footer-text ">
         <small style="color: white">&copy; Copyright 2020 | Js Machinery Supply Sdn.Bhd . All Rigths Reserved</small> 
-</div>
+      </div>
     </div>
   </footer>
   <!-- Footer section ends here -->
