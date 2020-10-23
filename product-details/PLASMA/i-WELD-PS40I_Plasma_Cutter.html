@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Js Machinery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/logo2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo2.png">
+  <link rel="manifest" href="../../images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="../../images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/custom-responsive-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script type="text/javascript" src="../../script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../../script/all-plugins.js"></script>
+  <script type="text/javascript" src="../../script/plugin-active.js"></script>
+  <style>
+    body {
+      background-image: url("../../images/screw-4929704_192011.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    div.tab-frame input{ display:none;}
+    div.tab-frame label{ display:block; float:left;padding:5px 10px; cursor:pointer;color:white;}
+    div.tab-frame input:checked + label{ background:yellow; color:black; cursor:default}
+    div.tab-frame div.tab{ display:none; padding:5px 10px;clear:left}
+  
+    div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+    div.tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+    div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3){ display:block;}
+    .bg{
+      background-image: url("images/screw-4929704_1920.jpg");
+    }
+
+    .box {
+      padding: 0px 22px;
+      margin-bottom: 120px;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 120px;
+    }
+    .flex-container > div {
+      margin: 0px 10px;
+      font-size: 15px;
+      color: white;
+    }
+    .fixWidth {
+      width: 12%;
+    }
+
+    #grayHr {
+      background-color: gray; 
+      width: 100%; 
+      margin-left: 17px; 
+      margin-right: 17px; 
+      padding-left: 17px; 
+      padding-right: 17px;
+    }
+
+    table > tr > td {
+      color: white;
+      font-size: 15px;
+    }
+
+    .col-md-12 {
+      padding: 0;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      .cardc {
+        padding-left: 10%
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header starts here -->
+  <header id="Header" style="background-color: black">
+    <nav class="main-navigation" >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="logo">
+              <a href="#"><img src="../../images/logo2.png" alt="Logo"></a>
+            </div>
+          </div>
+          <div class="col text-right">
+            <div class="menu-wrap">
+              <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+       <div class="mobile-menu">
+      <ul>
+        <li><a href="../../" class="smooth-scroll">Home</a></li> 
+         <li><a href="../../about.html" class="smooth-scroll">About Us</a></li>    
+     
+        <li><a href="../../product-category/index.html" class="smooth-scroll">Our Products</a></li>
+         <li><a href="../../index.html#ContactUs" class="smooth-scroll">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container" style="padding-top: 20px">
+    <hr>
+    <p style="color: white">Home / GMAW / i-WELD PS40I Plasma Cutter</p>
+    <hr>
+    <div class="row" style="background-color: black">
+      <div class="col-md-6">  <img src="../../images/PLASMA/3-i-WELD_PS40I_Plasma_Cutter.png" style="width:100%"></div>
+      <div class="col-md-6">
+        <p><h2 style="color: yellow"><strong>i-WELD PS40I Plasma Cutter</strong></h2></p>
+        
+        <span style="color: white;font-size: 13px">
+          <p>
+            i-WELD PS Inverter Power Source is heavy duty type designed with mostet and IGBT based inverter technology for the excellent performance. High quality & proven semiconductor are used for reliability and performance. I-weld offers a complete range of Plasma cutter showing top quality cut from 0.5mm to 1omm. i-WELD power source is designed to work under the hard harshest environments & to meet stringent requirements where quality is of paramount importance.
+          </p>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container" style="padding: 120px; margin: 120px"> -->
+  <div class="container" style="padding-top: 20px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tab-frame">
+          <input type="radio" checked name="tab" id="tab1">
+            <label for="tab1">Description</label>    
+              <input type="radio" name="tab" id="tab2">
+              <label for="tab2">Additional information</label>
+              <input type="radio" name="tab" id="tab3">
+            
+              <div class="tab" style="background-color: black">
+                <strong style="color: yellow; font-size: 25px">Description </strong><br>
+                <hr style="background-color: yellow; font-size: 25px; max-width: 350px;"><br>
+                
+                <div class="box">
+                  <strong style="color: yellow; font-size: 23px;">i-WELD PS40I Plasma Cutter</strong><br><br>
+                  <p style="color: yellow; font-size: 18px; width: 100%;"><strong>Features:</strong></p>
+                  <p style="color: white; font-size: 15px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Pilat is the striking system for easy starting. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Indicator light for thermal overload protection. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Post-Flow cooling. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Air regulator with pressure adjustment. <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Easy carry handle. <br>
+                  </p>
+                  
+                  <p style="color: yellow; font-size: 18px; width: 100%;"><strong>Benefits:</strong></p>
+                  <p style="color: white; font-size: 15px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Cuts all electrical conductive materials <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Easy to use professional result at the 1st trial <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Faster than other cutting methods <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. More precise <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Smaller heat affected zone <br>
+                  </p>
+                  
+                  <p style="color: yellow; font-size: 18px; width: 100%;"><strong>Specifications:</strong></p>
+                  <span style="color: white; font-size: 15px;">
+                    <table style="margin-left: 25px; margin-bottom: 15px;">  
+                      <tr>
+                        <td>Power Voltage (V)	</td>
+                        <td>: 240V + 15%</td>
+                      </tr>
+                      <tr>
+                        <td>Phase (PH) / Frequency (HZ)	</td>
+                        <td>: 1 / 50-60</td>
+                      </tr>
+                      <tr>
+                        <td>No Load Voltage (V)	</td>
+                        <td>: 277</td>
+                      </tr>
+                      <tr>
+                        <td>Rated Input Power (kVA)	</td>
+                        <td>: 2.2</td>
+                      </tr>
+                      <tr>
+                        <td>Rated Input Current (A)	</td>
+                        <td>: 9</td>
+                      </tr>
+                      <tr>
+                        <td>Rated Output Voltage (V)	</td>
+                        <td>: 96</td>
+                      </tr>
+                      <tr>
+                        <td>Rated Duty Cycle (%)	</td>
+                        <td>: 60</td>
+                      </tr>
+                      <tr>
+                        <td>Housing Protection Grade	</td>
+                        <td>: IP21</td>
+                      </tr>
+                      <tr>
+                        <td>Weight (KG)	</td>
+                        <td>: 7</td>
+                      </tr>
+                    </table>
+                  </span>
+
+                  <p style="color: yellow;font-size: 18px; width: 100%;"><strong>Package Includes:</strong></p>
+                  <span style="color: white;font-size: 15px">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. i-WELD Welding Machine PS 40I x 1 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Earth Cable with Electrode Holder (100% Copper Cable) x 1 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Plasma Torch x 1 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Reinforced Gas Hose x 1 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Extra Accessories <br>
+                  </span>
+                </div>
+              </div>
+
+              <div class="tab"  style="background-color: black"> 
+                <strong style="color: yellow;font-size: 25px">ADDITION INFORMAION</strong><br><hr style="color: yellow; background-color: yellow; font-size: 25px; max-width: 350px;"><br>
+
+                <div class="flex-container">
+                  <div class="fixWidth">Brand</div>
+                  <div>:&nbsp;<i style="color: yellow;">i-WELD</i></div>
+
+                  <hr id="grayHr">
+
+                  <div class="fixWidth">Colour</div>
+                  <div>:&nbsp;<i>Yellow</i></div>
+                                    
+                  <hr id="grayHr">
+
+                  <div class="fixWidth">Model</div>
+                  <div>:&nbsp;<i style="color: yellow;">PS 40I</i></div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ <br>
+
+  <footer id="Footer">
+    <div class="container text-center">
+      <div class="footer-text ">
+        <small style="color: white">&copy; Copyright 2020 | Js Machinery Supply Sdn.Bhd . All Rigths Reserved</small> 
+</div>
+    </div>
+  </footer>
+  <!-- Footer section ends here -->
+</body>
+
+</html>
